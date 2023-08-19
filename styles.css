@@ -1,0 +1,92 @@
+/* Reset default margin and padding for body */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the banner header */
+.banner {
+    position: relative; /* Enable positioning for overlay */
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the banner image to fill the header */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+/* Create a gradient overlay to fade out the image */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(167, 68, 65, 1));
+    pointer-events: none; /* Allow interactions with content below */
+}
+
+/* Style the text overlay */
+.banner-text {
+    position: absolute;
+    top: 50%; /* Adjust to vertically center the text */
+    left: 50%; /* Adjust to horizontally center the text */
+    transform: translate(-50%, -50%); /* Center the text perfectly */
+    text-align: center;
+    color: white; /* Set text color */
+}
+
+.banner-text h1 {
+    font-size: 2.5em; /* Adjust font size */
+    font-family: comfortaa;
+    line-height: 1.3em;
+    color: black;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2em; /* Adjust font size */
+    font-family: comfortaa;
+    color: rgb(110, 110, 110);
+    margin: 0;
+}
+
+.button {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 8.5em;
+    height: 2.9em;
+    border: #291720 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin-left: 5em;
+  }
+  
+  .button:hover {
+    background-color: #E0AFA0;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.5em;
+    margin: -0.2em 0.1em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
