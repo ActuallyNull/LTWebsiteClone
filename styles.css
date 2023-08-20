@@ -60,7 +60,7 @@ body, html {
 
 .button {
     background-color: #ffffff00;
-    color: #fff;
+    color: #4E0250;
     width: 8.5em;
     height: 2.9em;
     border: #291720 0.2em solid;
@@ -89,4 +89,20 @@ body, html {
   
   .text {
     margin: 0 1.5em
+  }
+
+  .main-flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    margin-left: 2em;
+  }
+
+  .main-flex-content {
+    font-family: comfortaa;
+  }
+
+  #X5osgqZuBKaeFcLv {
+    font-family: quicksand;
   }

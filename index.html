@@ -6,10 +6,12 @@
     <title>École Internationale Lucille-Teasdale</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
 </head>
 <body style="background-image: linear-gradient(125deg, #A74441 0%, rgba(151, 32, 32, 0.84) 100%);">
-    <header class="banner" style="border: 5px, solid, red;">
+    <header class="banner">
         <img src="files/banner2.png" alt="Banner Image">
         <div class="banner-text">
             <h1>École<br>Internationale<br>Lucille-Teasdale</h1>
@@ -17,7 +19,8 @@
             <p>Baccalauréat International</p>
         </div>
     </header>
-    <nav>
+    <nav style="display: flex;">
+    <a href="index.html">
     <button class="button"> 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
@@ -26,9 +29,20 @@
         Acceuil
         </div>
     </button>
+    </a>
+    <a href="school.html">
+        <button class="button"> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+            </svg> 
+            <div class="text">
+            École
+            </div>
+        </button>
+        </a>
     </nav>
-    <main>
-        <!-- The rest of your content here -->
+    <main class="main-flex-container">
+        <div><rssapp-carousel id="X5osgqZuBKaeFcLv"></rssapp-carousel><script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script></div>
     </main>
 </body>
 </html>
